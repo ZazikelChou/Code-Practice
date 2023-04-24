@@ -14,37 +14,102 @@
         h2{
             color: #ff8906;
         }
-        dl {
+        /* .header {
+        text-align: center;
+        }
+        .header h1 {
+            display: inline-block;
+        } */
+        a {
+        color: #fffffe;
+        text-decoration: none;
+        }
+        .top{
             display: flex;
-            justify-content: center;
-            margin: 0 auto;
-            width: fit-content;
+            justify-content: center; 
+            align-items: center; 
+            list-style: none;
+            padding: 0;
         }
-        h1, h2 {
-            text-align: center;
-            margin: 100px auto;
+        .top li{
+            margin: auto 10px;
         }
-        dd img {
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-            margin: 0 10px;
+        li img{
+            width: 100px;
+            height: 100px;
+        }
+        .hobby{
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        .hobby li{
+            margin: 0 20px;
         }
     </style>
 </head>
 <body>
-    <h1>
-        <a href="../index.html"><img src="../img/logo.png" alt="周聖鎧の自己紹介サイト" ></a>
-    </h1>
-    
-    <h2>オススメ</h2>
-    <dl>
-        <dt>映画</dt>
-        <dd> <img src="../img/every.png" alt="エブリシング・エブリウェア・オール・アット・ワンス"></dd>
-        <dt>ゲーム</dt>
-        <dd><img src="../img/overwatch.png" alt="オーバーウォッチ"></dd>
-        <dt>音楽</dt>
-        <dd> <img src="../img/drive.jpeg" alt="ドライブ・マイ・カー"></dd>
-    </dl>
+    <!-- <div class="header"> -->
+        <!--  <h1>
+            <a href="../index.html">TOP</a>
+        </h1>
+        <h1>
+            |
+        </h1>
+        <h1>
+            <a href="../recommend/index.html">オススメ</a>
+        </h1> -->
+        
+        <nav>
+            <ul class="top">
+                <li>
+                    <h1><a href="../index.html">TOP</a></h1>
+                </li>
+                <li>
+                    <h1>|</h1>
+                </li>
+                <li>
+                    <h1> <a href="../recommend/index.html">オススメ</a></h1>
+                </li>
+            </ul>
+        </nav>
+    <!-- </div> -->
+    <section>
+        <h2>はじめまして、周聖鎧の自己紹介サイトへようこそ</h2>
+        <ul class="hobby">
+            <li>
+                <img src="../img/1054941_video_film_movie_icon.png" alt="映画">
+            </li>
+            <li>
+                <img src="../img/1826207_brand_logo_music_network_social_icon.png" alt="音楽">
+            </li>
+            <li>
+                <img src="../img/4177739_games_gaming_steam_icon.png" alt="ゲーム">
+            </li>
+        </ul>
+        <h2>好きなアーティストランキング</h2>
+        <ol>
+            <li>
+                <a href="https://hinscheung.com/sc/home">hinscheung</a>
+            </li>
+            <li><a href="https://music.apple.com/jp/artist/陳奕迅/137938148">Eason Chan</a></li>
+            <li><a href="https://music.apple.com/jp/artist/玉置浩二/220147092">玉置浩二</a></li>
+        </ol>
+    </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <aside>
+            <footer>
+                <address>このサイトに関するお問い合わせ先：
+                    <a href="zazikelchou@gmail.com">SHENGKAI ZHOU</a>.
+                </address>
+            </footer> 
+        </aside>
 </body>
 </html>

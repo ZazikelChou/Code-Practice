@@ -11,17 +11,88 @@
             color: #fffffe;
             font-family: "Yu Gothic", "YuGothic", "游ゴシック体", "Yu Gothic UI", "Helvetica Neue", Arial, sans-serif;
         }
+        .header {
+            text-align: center;
+            
+        }
+        .header h1 {
+            display: inline-block;
+        }
+        a {
+        color: #fffffe;
+        text-decoration: none;
+        }
+        ul{
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            list-style: none;
+            padding: 0;
+        }
+        .logo {
+            /* display: flex; */
+            align-items: center;
+            }
+        .logo li{
+            display: inline-block;
+            text-align: center;
+            margin:  30vh 50px;
+        }
+        li img{
+            max-width: 100%;
+            border-radius: 50%; /* 将图片裁剪成圆形 */
+            box-shadow: 0px 0px 10px rgba(#fffffe); /* 添加一个阴影效果 */
+            height: 200px;
+            width: 200px;
+        }
+        .top{
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            list-style: none;
+            padding: 0;
+        }
+        .top li{
+            margin: auto 10px;
+        }
+        
     </style>
 </head>
 <body>
-    <h1>
-        <a href="../index.html"><img src="../img/logo.png" alt="周聖鎧の自己紹介サイト" ></a>
-    </h1>
-    <div>
-        <img src="" alt="">
-    </div>
-    <div></div>
-    <div></div>
+    <nav>
+        <ul class="top">
+            <li>
+                <h1><a href="../index.html">TOP</a></h1>
+            </li>
+            <li>
+                <h1>|</h1>
+            </li>
+            <li>
+                <h1>  <a href="../hobby/index.html">趣味</a></h1>
+            </li>
+        </ul>
+    </nav>
+<!--         <div class="header">
+            <h1>
+                <a href="../index.html">TOP</a>
+            </h1>
+            <h1>
+                |
+            </h1>
+            <h1>
+                <a href="../hobby/index.html">趣味</a>
+            </h1> -->
+    <ul class="logo">
+        <li>
+            <a href="https://www.imdb.com/title/tt6710474/"><img src="../img/every.png" alt="エブリシング・エブリウェア・オール・アット・ワンス"></a>
+        </li>
+        <li>
+            <a href="https://overwatch.blizzard.com/ja-jp/"><img src="../img/overwatch.png" alt="オーバーウォッチ"></a>
+        </li>
+        <li>
+            <a href="https://www.amazon.co.jp/Drive-My-Car-Original-Soundtrack/dp/B098NWM89N"><img src="../img/drive.jpeg" alt="ドライブ・マイ・カー"></a>
+        </li>
+    </ul>
 
 </body>
 </html>
