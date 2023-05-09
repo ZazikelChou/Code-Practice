@@ -1,0 +1,92 @@
+﻿@charset "utf-8";
+/*==============================
+   bodスタイル指定
+================================*/
+body{
+  margin:0;
+  background-color:#000000;
+  font-family:"Trebuchet MS", sans-serif;
+}
+
+article, aside, nav, section,  footer, header, figure {
+	display:block;
+}
+
+header,footer{
+  background-color: #EFEFEF;
+}
+/* ナゲーション部分のスタイル指定
+-----------------------------------*/
+nav{
+  background-color: #786A47;
+}
+nav ul{
+  color:#FFFFFF;
+  margin:0.8em 20px;
+  padding:0;
+}
+nav ul li{
+  margin:0.2em 6px;
+  font-size:80%;
+}
+nav ul li li{
+  font-size:100%;
+}
+
+/* 見出しのスタイル
+-------------------------*/
+h1{
+  color:#B8B99B;
+}
+h2{
+  font-size:12px;
+  margin:0 5px;
+  padding:2px 2px 2px 5px;
+  background-color:#EFEFEF;
+}
+
+/* 本文のスタイル
+-------------------------*/
+#contents{
+  background-color:#FFFFFF;
+  font-size:80%;
+  padding:1em 0;
+  
+}
+p{
+  margin:1em 15px;
+}
+
+#subcolArea{
+	background-color:#CCCC66;
+}
+
+.page_header { grid-area: header; }
+.page_footer { grid-area: footer; }
+.page_main { grid-area: main; }
+.side_left { grid-area: navigation; }
+.side_right { grid-area: ads; }
+
+.container{
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-areas: "header header header"
+                        "navigation main ads"
+                        "footer footer footer";
+  grid-template-columns: minmax(180px,1fr) minmax(380px,4fr) minmax(180px,1fr);
+  grid-template-rows: auto 1fr 80px;
+}
+@media screen and (max-width: 414px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "navigation"
+      "main"
+      "ads"
+      "footer";
+    grid-template-rows: 120px auto auto auto 200px;
+    grid-template-columns: auto;
+  }
+}
+
