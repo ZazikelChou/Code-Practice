@@ -1,0 +1,28 @@
+#slider {
+  margin: 20px 0;
+}
+.img-list {
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+}
+.img-list li {
+  list-style-type: none;
+  display: none;
+  text-align: center;
+}
+img {
+  width: 300px;
+}
+.img-list .active-img {
+  display: block;
+}
+#next-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 12px;
+  text-decoration: none;
+  background: red;
+  color: #fff;
+  border-radius: 3px;
+}

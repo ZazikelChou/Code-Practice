@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script2.js" defer></script>
+  </head>
+  <body>
+    <h1>HTMLから配列を取得する練習</h1>
+    <h2>記述ステップ</h2>
+    <ol class="steps">
+      <li>htmlの.img-list内のli要素を取得する</li>
+      <li>取得したliが配列状（厳密には配列ではないが）になっているかコンソールで確認する</li>
+      <li>画像ファイル名を持った配列を作る</li>
+      <li>取得した配列内のli要素すべてにimgタグを文字列として挿入する</li>
+      <li>
+        imgタグはテンプレートリテラルを使う必要がる、特にsrcプロパティはファイル名を配列から取得するので工夫しよう
+      </li>
+      <li>ここまでできたら完成。詰まった場合はどのステップでエラーが起きているか確認しよう！</li>
+    </ol>
+    <section id="slider">
+      <ul class="img-list">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <button id="next-btn" type="button">次の画像</button>
+    </section>
+  </body>
+</html>
+<img src="" alt="">
