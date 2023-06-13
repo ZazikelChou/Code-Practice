@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*==============================
+   bodスタイル指定 
+================================*/
+html{
+	font-size: 62.5% /* 
+	デフォルトフォントサイズ= 16px相当 
+	16×62.5% = 10 */
+}
+body{
+    background: #EFEFEF;
+    color: #333333;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font-size: 1.6rem;
+}
+
+header{
+    background-color: #64B5F6;
+}
+.gnav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.gnav li{
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #EFEFEF;
+}
+.gnav li a{
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+.col{
+    background-color: #AED581;
+    padding: 10px 2em;
+}
+.nm3{
+    background-color:#AED581;
+}
+footer{
+    background-color: #4DD0E1;
+}
+footer p{
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (min-width: 600px) { 
+    #wrap{
+        width: 90%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .gnav ul{
+        display: flex;
+    }
+    .gnav li{
+        width: 25%;
+    }
+    article{
+        display: grid;
+		grid-template-areas: "header header header"
+                        "leftcol centercol rightcol";
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    }
+    article h2{
+        grid-area: header;
+    }
+    .nm1{
+        grid-area: leftcol;
+    }
+    .nm2{
+        grid-area: centercol;
+    }
+    .nm3{
+        grid-area: rightcol;
+    }
+}
