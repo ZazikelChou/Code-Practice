@@ -19,17 +19,16 @@ menuButton.addEventListener("click", function() {
 });
 
 
-// var hbgmenubody = document.getElementById("hbg-menu-body-wrap");
-// var hbgmenu = hbgmenubody.querySelector(".hbg-menu-body");
-// var isCross1 = false;
+var isCross1 = false;
+var hbgmenu = document.getElementById("hbg-menu-body-wrap");
+var hbgmenubody = hbgmenu.querySelector(".hbg-menu-body");
 
-// menuButton.addEventListener("click", function() {
-//   if (isCross1) {
-//     btnLine.classList.add("hbg-menu-body-clicked");
-    
-//   } else {
-//     btnLine.classList.remove("hbg-menu-body-clicked");
-//   }
+menuButton.addEventListener("click", function() {
+  if (isCross1) {
+    hbgmenubody.classList.add("hbg-menu-body-clicked");
+  } else {
+    hbgmenubody.classList.remove("hbg-menu-body-clicked");
+  }
   
-//   isCross1 = !isCross1;
-// });
+  isCross1 = !isCross1;
+});
