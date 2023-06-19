@@ -1,0 +1,147 @@
+/* 600px */
+@charset "utf-8";
+html{
+    font-size: 62.5% /* 
+    デフォルトフォントサイズ= 16px相当 
+    16×62.5% = 10 */
+}
+body{
+    background: #FFFFFF;
+    color: #333333;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font-size: 1.6rem;
+}
+@media only screen and (max-width: 600px){
+
+    .site-title{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    #header ul{
+        display: flex;
+        justify-content: space-around; 
+        width: 90%;
+        margin: 2rem auto;
+        font-size: 1.4rem;
+    }
+    /* #header ul li{
+        padding: 2%;
+        margin-bottom: 2rem;
+    } */
+    .icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    h2.sec-title{
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 5rem 0 4rem;
+    }
+    .wrapper{
+        margin: 0 4vw;
+    }
+    #about ul,
+    #about p,
+    #news dl{
+        font-size: 1.6rem;
+    }
+    #works ul li{
+        margin-bottom: 2rem;
+    }
+    #news dl{
+        border-top: 1px solid #ccc;
+        padding:1.2rem 0 ;
+    }
+    #news dl dd{
+        border-bottom: 1px solid #ccc;
+        padding:1.2rem 0;
+        margin: 0 0 1.4rem;
+    }
+    #contact dl input,
+    #contact dl textarea{
+        border: 1px solid #ccc;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+    #contact dd textarea{
+        height: 20rem;
+    }
+    #contact .button{
+        text-align: center;
+    }
+    #contact .button input{
+        background-color: #333;
+        color: #FFFFFF;
+        width: 40%;
+        padding: 1.5rem 0;
+        font-size: 1.6rem;
+        margin: 2rem 0;
+    }
+    #footer{
+        background-color: #333;
+        color: #FFFFFF;
+        padding: 1rem 1.5rem;
+        text-align: center
+    }
+}
+@media only screen and (min-width: 601px){
+    #header {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 4%;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        
+    }
+    /* .site-title {
+        text-align: left;
+    } */
+    #header nav{
+        width: 400px;
+    }
+    #header nav ul {
+        display: flex;
+        align-items: center;
+    }
+    .wrapper{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    main{
+        max-width: 128rem;
+        margin: 0 auto;
+    }
+
+
+
+    /* work */
+    img{
+        max-width: 100%;
+    }
+    #works ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #works li{
+        width: 31%;
+    }
+    #news dl{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #news dt{
+        width: 20%;
+    }
+    #news dd{
+        width: 80%;
+    }
+
+}
